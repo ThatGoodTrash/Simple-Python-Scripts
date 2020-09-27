@@ -17,3 +17,10 @@ Future version will guess manufacturer of device based on MAC address
 Takes input of target machine you want to conduct MITM attack on, and the gateway ip address
 Uses scapy to create ARP packets to sends ARP responses to both devices so that traffic is passed through the attacker machine
 Once attack has concluded, exit script with CTRL + C. This will restore the ARP tables on the devices
+
+[+] packet_sniffer.py
+Takes input of interface (i.e. eth0, wlan0, etc.)
+Can be used in conjunction with arp_spoofer.py, while conducting MITM attack
+Outputs HTTP requests the target is making, and searches for possible usernames or passwords passed in clear text
+Future versions will allow user to specify what traffic to filter by
+Future version will also show source IP address for utilization across a network
