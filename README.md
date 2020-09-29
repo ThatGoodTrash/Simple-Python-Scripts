@@ -24,3 +24,9 @@ Can be used in conjunction with arp_spoofer.py, while conducting MITM attack
 Outputs HTTP requests the target is making, and searches for possible usernames or passwords passed in clear text
 Future versions will allow user to specify what traffic to filter by
 Future version will also show source IP address for utilization across a network
+
+[+] dns_spoofer.py
+Used to modify target DNS requests to redirect to malicous web server
+Currently not very user friendly and need to add arguments and error messages
+Future version will allow for user input website name to spoof
+will also have ability to automatically create and flush iptables queue
